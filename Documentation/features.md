@@ -26,3 +26,6 @@ Following:
 - Unfollow a artist
 - Who i'm following
 - Gig feed
+
+## DEPENDENCIES OVERVIEW
+![Dependencies overview](Documentationn/dependencies.png)

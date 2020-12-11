@@ -1,92 +1,92 @@
-<mxfile host="65bd71144e" modified="2020-12-11T01:06:16.778Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.51.1 Chrome/83.0.4103.122 Electron/9.3.3 Safari/537.36" version="13.10.0" etag="fDB-5V3ScLcMEL9Gsjpm" type="embed">
+<mxfile host="65bd71144e" modified="2020-12-11T01:19:49.964Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.51.1 Chrome/83.0.4103.122 Electron/9.3.3 Safari/537.36" etag="JCy5TpfJnscVGGDnB2jZ" version="13.10.0" type="embed">
     <diagram id="vK_wk12hMwim_Xy8CHRM" name="Page-1">
-        <mxGraphModel dx="1731" dy="622" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="#DAD2D8" math="0" shadow="0">
+        <mxGraphModel dx="1568" dy="529" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" background="#2E3459" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
-                <mxCell id="2" value="Add a gig" style="whiteSpace=wrap;html=1;fillColor=#FAE5C7;strokeColor=#0F8B8D;fontColor=#143642;sketch=1;rounded=1;" vertex="1" parent="1">
+                <mxCell id="2" value="Add a gig" style="whiteSpace=wrap;html=1;fillColor=#60a917;strokeColor=#2D7600;fontColor=#ffffff;sketch=1;rounded=1;fillStyle=solid;dashed=1;" parent="1" vertex="1">
                     <mxGeometry x="320" y="240" width="120" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="31" style="edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#A8201A;fontColor=#143642;labelBackgroundColor=#DAD2D8;sketch=1;curved=1;" edge="1" parent="1" source="3" target="8">
+                <mxCell id="31" style="edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontColor=#143642;labelBackgroundColor=#DAD2D8;sketch=1;curved=1;dashed=1;strokeColor=#FFFFFF;" parent="1" source="3" target="8" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="3" value="Edit a gig" style="whiteSpace=wrap;html=1;fillColor=#FAE5C7;strokeColor=#0F8B8D;fontColor=#143642;sketch=1;rounded=1;" vertex="1" parent="1">
+                <mxCell id="3" value="Edit a gig" style="whiteSpace=wrap;html=1;fillColor=#76608a;strokeColor=#432D57;fontColor=#ffffff;sketch=1;rounded=1;fillStyle=solid;dashed=1;" parent="1" vertex="1">
                     <mxGeometry x="-120" y="30" width="120" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="32" style="edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#A8201A;fontColor=#143642;labelBackgroundColor=#DAD2D8;sketch=1;curved=1;" edge="1" parent="1" source="4" target="8">
+                <mxCell id="32" style="edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontColor=#143642;labelBackgroundColor=#DAD2D8;sketch=1;curved=1;dashed=1;strokeColor=#FFFFFF;" parent="1" source="4" target="8" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="4" value="Remove a gig" style="whiteSpace=wrap;html=1;arcSize=12;fillColor=#FAE5C7;strokeColor=#0F8B8D;fontColor=#143642;sketch=1;rounded=1;" vertex="1" parent="1">
+                <mxCell id="4" value="Remove a gig" style="whiteSpace=wrap;html=1;arcSize=12;fillColor=#76608a;strokeColor=#432D57;fontColor=#ffffff;sketch=1;rounded=1;fillStyle=solid;dashed=1;" parent="1" vertex="1">
                     <mxGeometry x="-120" y="120" width="120" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="25" style="edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#A8201A;fontColor=#143642;labelBackgroundColor=#DAD2D8;sketch=1;curved=1;" edge="1" parent="1" source="5" target="2">
+                <mxCell id="25" style="edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontColor=#143642;labelBackgroundColor=#DAD2D8;sketch=1;curved=1;dashed=1;strokeColor=#FFFFFF;" parent="1" source="5" target="2" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="5" value="View all upcoming gigs" style="whiteSpace=wrap;html=1;fillColor=#FAE5C7;strokeColor=#0F8B8D;fontColor=#143642;sketch=1;rounded=1;" vertex="1" parent="1">
+                <mxCell id="5" value="View all upcoming gigs" style="whiteSpace=wrap;html=1;fillColor=#6d8764;strokeColor=#3A5431;fontColor=#ffffff;sketch=1;rounded=1;fillStyle=solid;dashed=1;" parent="1" vertex="1">
                     <mxGeometry x="100" y="240" width="120" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="40" style="edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;strokeColor=#A8201A;fontColor=#143642;labelBackgroundColor=#DAD2D8;sketch=1;curved=1;" edge="1" parent="1" source="6" target="5">
+                <mxCell id="40" style="edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;fontColor=#143642;labelBackgroundColor=#DAD2D8;sketch=1;curved=1;dashed=1;strokeColor=#FFFFFF;" parent="1" source="6" target="5" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="6" value="Search gigs" style="whiteSpace=wrap;html=1;fillColor=#FAE5C7;strokeColor=#0F8B8D;fontColor=#143642;sketch=1;rounded=1;" vertex="1" parent="1">
+                <mxCell id="6" value="Search gigs" style="whiteSpace=wrap;html=1;fillColor=#76608a;strokeColor=#432D57;fontColor=#ffffff;sketch=1;rounded=1;fillStyle=solid;dashed=1;" parent="1" vertex="1">
                     <mxGeometry x="-120" y="430" width="120" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="41" style="edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#A8201A;fontColor=#143642;labelBackgroundColor=#DAD2D8;sketch=1;curved=1;" edge="1" parent="1" source="7">
+                <mxCell id="41" style="edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;jettySize=auto;html=1;fontColor=#143642;labelBackgroundColor=#DAD2D8;sketch=1;curved=1;dashed=1;strokeColor=#FFFFFF;" parent="1" source="7" edge="1">
                     <mxGeometry relative="1" as="geometry">
                         <mxPoint x="160" y="310" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="7" value="View gig details" style="whiteSpace=wrap;html=1;fillColor=#FAE5C7;strokeColor=#0F8B8D;fontColor=#143642;sketch=1;rounded=1;" vertex="1" parent="1">
+                <mxCell id="7" value="View gig details" style="whiteSpace=wrap;html=1;fillColor=#76608a;strokeColor=#432D57;fontColor=#ffffff;sketch=1;rounded=1;fillStyle=solid;dashed=1;" parent="1" vertex="1">
                     <mxGeometry x="-120" y="524.5" width="120" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="27" style="edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#A8201A;fontColor=#143642;labelBackgroundColor=#DAD2D8;sketch=1;curved=1;" edge="1" parent="1" source="8">
+                <mxCell id="27" style="edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;jettySize=auto;html=1;fontColor=#143642;labelBackgroundColor=#DAD2D8;sketch=1;curved=1;dashed=1;strokeColor=#FFFFFF;" parent="1" source="8" edge="1">
                     <mxGeometry relative="1" as="geometry">
                         <mxPoint x="380" y="240" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="8" value="My upcoming gigs" style="whiteSpace=wrap;html=1;fillColor=#FAE5C7;strokeColor=#0F8B8D;fontColor=#143642;sketch=1;rounded=1;" vertex="1" parent="1">
+                <mxCell id="8" value="My upcoming gigs" style="whiteSpace=wrap;html=1;sketch=1;rounded=1;fillColor=#76608a;strokeColor=#432D57;fontColor=#ffffff;fillStyle=solid;dashed=1;" parent="1" vertex="1">
                     <mxGeometry x="100" y="30" width="120" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="33" style="edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#A8201A;fontColor=#143642;labelBackgroundColor=#DAD2D8;sketch=1;curved=1;" edge="1" parent="1" source="9" target="5">
+                <mxCell id="33" style="edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;jettySize=auto;html=1;fontColor=#143642;labelBackgroundColor=#DAD2D8;sketch=1;curved=1;dashed=1;strokeColor=#FFFFFF;" parent="1" source="9" target="5" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="9" value="Add a gig to calendar" style="whiteSpace=wrap;html=1;fillColor=#FAE5C7;strokeColor=#0F8B8D;fontColor=#143642;sketch=1;rounded=1;" vertex="1" parent="1">
+                <mxCell id="9" value="Add a gig to calendar" style="whiteSpace=wrap;html=1;fillColor=#60a917;strokeColor=#2D7600;fontColor=#ffffff;sketch=1;rounded=1;glass=0;shadow=0;fillStyle=solid;dashed=1;" parent="1" vertex="1">
                     <mxGeometry x="-120" y="240" width="120" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="34" style="edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#A8201A;fontColor=#143642;labelBackgroundColor=#DAD2D8;sketch=1;curved=1;" edge="1" parent="1" source="10" target="11">
+                <mxCell id="34" style="edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontColor=#143642;labelBackgroundColor=#DAD2D8;sketch=1;curved=1;dashed=1;strokeColor=#FFFFFF;" parent="1" source="10" target="11" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="10" value="Remove a gig from calendar" style="whiteSpace=wrap;html=1;fillColor=#FAE5C7;strokeColor=#0F8B8D;fontColor=#143642;sketch=1;rounded=1;" vertex="1" parent="1">
+                <mxCell id="10" value="Remove a gig from calendar" style="whiteSpace=wrap;html=1;fillColor=#76608a;strokeColor=#432D57;fontColor=#ffffff;sketch=1;rounded=1;fillStyle=solid;dashed=1;" parent="1" vertex="1">
                     <mxGeometry x="-500" y="240" width="120" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="28" style="edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#A8201A;fontColor=#143642;labelBackgroundColor=#DAD2D8;sketch=1;curved=1;" edge="1" parent="1" source="11" target="9">
+                <mxCell id="28" style="edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontColor=#143642;labelBackgroundColor=#DAD2D8;sketch=1;curved=1;dashed=1;strokeColor=#FFFFFF;" parent="1" source="11" target="9" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="11" value="View gigs i'm attending" style="whiteSpace=wrap;html=1;fillColor=#FAE5C7;strokeColor=#0F8B8D;fontColor=#143642;sketch=1;rounded=1;" vertex="1" parent="1">
+                <mxCell id="11" value="View gigs i'm attending" style="whiteSpace=wrap;html=1;fillColor=#6d8764;strokeColor=#3A5431;fontColor=#ffffff;sketch=1;rounded=1;fillStyle=solid;dashed=1;" parent="1" vertex="1">
                     <mxGeometry x="-320" y="240" width="120" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="35" style="edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#A8201A;fontColor=#143642;labelBackgroundColor=#DAD2D8;sketch=1;curved=1;" edge="1" parent="1" source="12" target="5">
+                <mxCell id="35" style="edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontColor=#143642;labelBackgroundColor=#DAD2D8;sketch=1;curved=1;dashed=1;strokeColor=#FFFFFF;" parent="1" source="12" target="5" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="12" value="Follow an artist" style="whiteSpace=wrap;html=1;fillColor=#FAE5C7;strokeColor=#0F8B8D;fontColor=#143642;sketch=1;rounded=1;" vertex="1" parent="1">
+                <mxCell id="12" value="Follow an artist" style="whiteSpace=wrap;html=1;fillColor=#60a917;strokeColor=#2D7600;fontColor=#ffffff;sketch=1;rounded=1;glass=0;shadow=0;fillStyle=solid;dashed=1;" parent="1" vertex="1">
                     <mxGeometry x="-120" y="340" width="120" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="38" style="edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#A8201A;fontColor=#143642;labelBackgroundColor=#DAD2D8;sketch=1;curved=1;" edge="1" parent="1" source="13" target="14">
+                <mxCell id="38" style="edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontColor=#143642;labelBackgroundColor=#DAD2D8;sketch=1;curved=1;dashed=1;strokeColor=#FFFFFF;" parent="1" source="13" target="14" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="13" value="Unfollow an artist" style="whiteSpace=wrap;html=1;fillColor=#FAE5C7;strokeColor=#0F8B8D;fontColor=#143642;sketch=1;rounded=1;" vertex="1" parent="1">
+                <mxCell id="13" value="Unfollow an artist" style="whiteSpace=wrap;html=1;fillColor=#76608a;strokeColor=#432D57;fontColor=#ffffff;sketch=1;rounded=1;fillStyle=solid;dashed=1;" parent="1" vertex="1">
                     <mxGeometry x="-500" y="340" width="120" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="37" style="edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#A8201A;fontColor=#143642;labelBackgroundColor=#DAD2D8;sketch=1;curved=1;" edge="1" parent="1" source="14" target="12">
+                <mxCell id="37" style="edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontColor=#143642;labelBackgroundColor=#DAD2D8;sketch=1;curved=1;dashed=1;strokeColor=#FFFFFF;" parent="1" source="14" target="12" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="14" value="Who am i following" style="whiteSpace=wrap;html=1;fillColor=#FAE5C7;strokeColor=#0F8B8D;fontColor=#143642;sketch=1;rounded=1;" vertex="1" parent="1">
+                <mxCell id="14" value="Who am i following" style="whiteSpace=wrap;html=1;fillColor=#6d8764;strokeColor=#3A5431;fontColor=#ffffff;sketch=1;rounded=1;fillStyle=solid;dashed=1;" parent="1" vertex="1">
                     <mxGeometry x="-320" y="340" width="120" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="39" style="edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#A8201A;fontColor=#143642;labelBackgroundColor=#DAD2D8;sketch=1;curved=1;" edge="1" parent="1" source="15" target="12">
+                <mxCell id="39" style="edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontColor=#143642;labelBackgroundColor=#DAD2D8;sketch=1;curved=1;dashed=1;strokeColor=#FFFFFF;" parent="1" source="15" target="12" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="15" value="Gig feed" style="whiteSpace=wrap;html=1;fillColor=#FAE5C7;strokeColor=#0F8B8D;fontColor=#143642;sketch=1;rounded=1;" vertex="1" parent="1">
+                <mxCell id="15" value="Gig feed" style="whiteSpace=wrap;html=1;fillColor=#76608a;strokeColor=#432D57;fontColor=#ffffff;sketch=1;rounded=1;fillStyle=solid;dashed=1;" parent="1" vertex="1">
                     <mxGeometry x="-320" y="430" width="120" height="60" as="geometry"/>
                 </mxCell>
             </root>

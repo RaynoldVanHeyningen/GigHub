@@ -28,4 +28,4 @@ Following:
 - Gig feed
 
 ## DEPENDENCIES OVERVIEW
-![Dependencies overview](Documentationn/dependencies.png)
+![Dependencies overview](dependencies.png)

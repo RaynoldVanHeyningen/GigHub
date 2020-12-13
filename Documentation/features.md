@@ -17,14 +17,14 @@ Gigs:
 - View gig details
 
 Gig Calendar:
-- Add a gig to calendar
-- Remove a gig from calendar
-- View gig's i am attending
+- Add a gig to the calendar
+- Remove a gig from a calendar
+- View gig's I am attending
 
 Following:
-- Follow a artist
-- Unfollow a artist
-- Who i'm following
+- Follow an artist
+- Unfollow an artist
+- Who I'm following
 - Gig feed
 
 ## DEPENDENCIES OVERVIEW

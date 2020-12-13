@@ -4,14 +4,16 @@ using GigHub.Areas.Identity.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace GigHub.Migrations
 {
     [DbContext(typeof(GigHubIdentityDbContext))]
-    partial class GigHubIdentityDbContextModelSnapshot : ModelSnapshot
+    [Migration("20201213202422_CreateGigAndGenreTable")]
+    partial class CreateGigAndGenreTable
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -225,9 +227,7 @@ namespace GigHub.Migrations
                         .HasColumnType("tinyint");
 
                     b.Property<string>("Name")
-                        .IsRequired()
-                        .HasMaxLength(255)
-                        .HasColumnType("nvarchar(255)");
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
 
@@ -251,9 +251,7 @@ namespace GigHub.Migrations
                         .HasColumnType("tinyint");
 
                     b.Property<string>("Venue")
-                        .IsRequired()
-                        .HasMaxLength(255)
-                        .HasColumnType("nvarchar(255)");
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
 

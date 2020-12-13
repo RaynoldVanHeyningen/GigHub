@@ -4,14 +4,16 @@ using GigHub.Areas.Identity.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace GigHub.Migrations
 {
     [DbContext(typeof(GigHubIdentityDbContext))]
-    partial class GigHubIdentityDbContextModelSnapshot : ModelSnapshot
+    [Migration("20201213201210_CreateGigTable")]
+    partial class CreateGigTable
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -219,51 +221,6 @@ namespace GigHub.Migrations
                     b.ToTable("AspNetUserTokens");
                 });
 
-            modelBuilder.Entity("Models.Genre", b =>
-                {
-                    b.Property<byte>("Id")
-                        .HasColumnType("tinyint");
-
-                    b.Property<string>("Name")
-                        .IsRequired()
-                        .HasMaxLength(255)
-                        .HasColumnType("nvarchar(255)");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Genres");
-                });
-
-            modelBuilder.Entity("Models.Gig", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .UseIdentityColumn();
-
-                    b.Property<string>("ArtistId")
-                        .HasColumnType("nvarchar(450)");
-
-                    b.Property<DateTime>("DateTime")
-                        .HasColumnType("datetime2");
-
-                    b.Property<byte?>("GenreId")
-                        .HasColumnType("tinyint");
-
-                    b.Property<string>("Venue")
-                        .IsRequired()
-                        .HasMaxLength(255)
-                        .HasColumnType("nvarchar(255)");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("ArtistId");
-
-                    b.HasIndex("GenreId");
-
-                    b.ToTable("Gigs");
-                });
-
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
                 {
                     b.HasOne("Microsoft.AspNetCore.Identity.IdentityRole", null)
@@ -313,21 +270,6 @@ namespace GigHub.Migrations
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
-                });
-
-            modelBuilder.Entity("Models.Gig", b =>
-                {
-                    b.HasOne("Microsoft.AspNetCore.Identity.IdentityUser", "Artist")
-                        .WithMany()
-                        .HasForeignKey("ArtistId");
-
-                    b.HasOne("Models.Genre", "Genre")
-                        .WithMany()
-                        .HasForeignKey("GenreId");
-
-                    b.Navigation("Artist");
-
-                    b.Navigation("Genre");
                 });
 #pragma warning restore 612, 618
         }

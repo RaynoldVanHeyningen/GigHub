@@ -1,15 +1,16 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using Models;
 
 namespace GigHub.Areas.Identity.Data
 {
     public class GigHubIdentityDbContext : IdentityDbContext<IdentityUser>
     {
+        public DbSet<Gig> Gigs { get; set; }
+        public DbSet<Genre> Genres { get; set; }
+
+
         public GigHubIdentityDbContext(DbContextOptions<GigHubIdentityDbContext> options)
             : base(options)
         {

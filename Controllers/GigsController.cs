@@ -1,12 +1,13 @@
 using GigHub.Areas.Identity.Data;
 using GigHub.ViewModels;
 using Microsoft.AspNetCore.Mvc;
+using System.Linq;
 
 namespace GigHub.Controllers
 {
     public class GigsController : Controller
     {
-        private GigHubIdentityDbContext _context;
+        private readonly GigHubIdentityDbContext _context;
 
         public GigsController(GigHubIdentityDbContext context)
         {
@@ -15,12 +16,14 @@ namespace GigHub.Controllers
 
         public IActionResult Create()
         {
+            var genres = _context.Genres.ToList();
+
             var viewModel = new GigFormViewModel
             {
-                Genres =
+                Genres = genres,
             };
 
-            return View();
+            return View(viewModel);
         }
     }
 }

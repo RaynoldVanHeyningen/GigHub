@@ -10,7 +10,6 @@ namespace GigHub.Areas.Identity.Data
         public DbSet<Gig> Gigs { get; set; }
         public DbSet<Genre> Genres { get; set; }
 
-
         public GigHubIdentityDbContext(DbContextOptions<GigHubIdentityDbContext> options)
             : base(options)
         {

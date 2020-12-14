@@ -24,6 +24,11 @@ a {
   border-color: #1861ac;
 }
 
+span.field-validation-error {
+  color: red;
+  font-weight: bold;
+}
+
 /* Sticky footer styles
 -------------------------------------------------- */
 html {
@@ -104,7 +109,7 @@ a.text-light:focus, a.text-light:hover {
 }
 
 .form-control:focus {
-  border-color: #ff4342;
+  border-color: #bee5eb;
   box-shadow: none;
 }
 

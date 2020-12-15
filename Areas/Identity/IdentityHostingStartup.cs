@@ -1,5 +1,6 @@
 using System;
 using GigHub.Areas.Identity.Data;
+using GigHub.Models;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.UI;
@@ -14,12 +15,13 @@ namespace GigHub.Areas.Identity
     {
         public void Configure(IWebHostBuilder builder)
         {
-            builder.ConfigureServices((context, services) => {
+            builder.ConfigureServices((context, services) =>
+            {
                 services.AddDbContext<GigHubIdentityDbContext>(options =>
                     options.UseSqlServer(
                         context.Configuration.GetConnectionString("GigHubIdentityDbContextConnection")));
 
-                services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
+                services.AddDefaultIdentity<ApplicationUser>(options => options.SignIn.RequireConfirmedAccount = true)
                     .AddEntityFrameworkStores<GigHubIdentityDbContext>();
             });
         }

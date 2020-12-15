@@ -5,7 +5,7 @@ using GigHub.Models;
 
 namespace GigHub.Areas.Identity.Data
 {
-    public class GigHubIdentityDbContext : IdentityDbContext<IdentityUser>
+    public class GigHubIdentityDbContext : IdentityDbContext<ApplicationUser>
     {
         public DbSet<Gig> Gigs { get; set; }
         public DbSet<Genre> Genres { get; set; }

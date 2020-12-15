@@ -1,26 +1,33 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using GigHub.Models;
+using GigHub.Areas.Identity.Data;
+using Microsoft.EntityFrameworkCore;
+using System.Linq;
+using System;
 
 namespace GigHub.Controllers
 {
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
+        private readonly GigHubIdentityDbContext _context;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(ILogger<HomeController> logger, GigHubIdentityDbContext context)
         {
             _logger = logger;
+            _context = context;
         }
 
         public IActionResult Index()
         {
-            return View();
+            var upcomingGigs = _context.Gigs
+            .Include(g => g.Artist)
+            .Where(g => g.DateTime > DateTime.Now);
+
+
+            return View(upcomingGigs);
         }
 
         public IActionResult Privacy()

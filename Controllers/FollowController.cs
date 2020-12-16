@@ -1,4 +1,5 @@
 using System.Linq;
+using Dtos;
 using GigHub.Areas.Identity.Data;
 using GigHub.Models;
 using Microsoft.AspNetCore.Authorization;
@@ -22,16 +23,16 @@ namespace GigHub.Controllers
         }
 
         [HttpPost]
-        public ActionResult Follow([FromBody] string followedUserId)
+        public ActionResult Follow(FollowingDto dto)
         {
             var userId = _userManager.GetUserId(User);
 
-            if (_context.Followings.Any(f => f.UserId == userId && f.FollowedUserId == followedUserId)) return BadRequest("You are already following this user.");
+            if (_context.Followings.Any(f => f.UserId == userId && f.FollowedUserId == dto.FollowUserId)) return BadRequest("You are already following this user.");
 
             var follow = new Follow
             {
                 UserId = userId,
-                FollowedUserId = followedUserId
+                FollowedUserId = dto.FollowUserId
             };
 
             _context.Followings.Add(follow);

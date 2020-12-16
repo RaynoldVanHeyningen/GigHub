@@ -4,14 +4,16 @@ using GigHub.Areas.Identity.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace GigHub.Migrations
 {
     [DbContext(typeof(GigHubIdentityDbContext))]
-    partial class GigHubIdentityDbContextModelSnapshot : ModelSnapshot
+    [Migration("20201216020306_AddFollowTable")]
+    partial class AddFollowTable
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -116,7 +118,7 @@ namespace GigHub.Migrations
 
                     b.HasIndex("FollowedUserId");
 
-                    b.ToTable("Followings");
+                    b.ToTable("Follow");
                 });
 
             modelBuilder.Entity("GigHub.Models.Genre", b =>

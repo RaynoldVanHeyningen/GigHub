@@ -10,6 +10,7 @@ namespace GigHub.Areas.Identity.Data
         public DbSet<Gig> Gigs { get; set; }
         public DbSet<Genre> Genres { get; set; }
         public DbSet<Attendance> Attendances { get; set; }
+        public DbSet<Follow> Follows { get; set; }
 
         public GigHubIdentityDbContext(DbContextOptions<GigHubIdentityDbContext> options)
             : base(options)
@@ -18,6 +19,7 @@ namespace GigHub.Areas.Identity.Data
 
         protected override void OnModelCreating(ModelBuilder builder)
         {
+            // Attendance building
             builder.Entity<Attendance>().HasKey(t => new
             {
                 t.GigId,
@@ -28,6 +30,19 @@ namespace GigHub.Areas.Identity.Data
                 .HasOne(t => t.Gig)
                 .WithMany()
                 .OnDelete(DeleteBehavior.Restrict);
+
+            // Follow building
+            builder.Entity<Follow>().HasKey(t => new
+            {
+                t.UserId,
+                t.FollowedUserId
+            });
+
+            builder.Entity<Follow>()
+                .HasOne(t => t.FollowedUser)
+                .WithMany()
+                .OnDelete(DeleteBehavior.Restrict);
+
 
             base.OnModelCreating(builder);
             // Customize the ASP.NET Identity model and override the defaults if needed.

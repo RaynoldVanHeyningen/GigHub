@@ -1,3 +1,4 @@
+using System.Linq;
 using GigHub.Areas.Identity.Data;
 using GigHub.Models;
 using Microsoft.AspNetCore.Authorization;
@@ -23,10 +24,14 @@ namespace GigHub.Controllers
         [HttpPost]
         public ActionResult Attend([FromBody] int gigId)
         {
+            var userId = _userManager.GetUserId(User);
+
+            if (_context.Attendances.Any(a => a.GigId == gigId && a.AttendeeId == userId)) return BadRequest("The attendance already exists.");
+
             var attendance = new Attendance
             {
                 GigId = gigId,
-                AttendeeId = _userManager.GetUserId(User)
+                AttendeeId = userId
             };
 
             _context.Attendances.Add(attendance);

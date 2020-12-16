@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace GigHub.Migrations
 {
     [DbContext(typeof(GigHubIdentityDbContext))]
-    [Migration("20201216022842_FollowTableSet")]
-    partial class FollowTableSet
+    [Migration("20201216024116_AddFollowingSet")]
+    partial class AddFollowingSet
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -118,7 +118,7 @@ namespace GigHub.Migrations
 
                     b.HasIndex("FollowedUserId");
 
-                    b.ToTable("Follows");
+                    b.ToTable("Followings");
                 });
 
             modelBuilder.Entity("GigHub.Models.Genre", b =>

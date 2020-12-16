@@ -2,7 +2,7 @@
 
 namespace GigHub.Migrations
 {
-    public partial class FollowTableSet : Migration
+    public partial class AddFollowingSet : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -20,29 +20,29 @@ namespace GigHub.Migrations
 
             migrationBuilder.RenameTable(
                 name: "Follow",
-                newName: "Follows");
+                newName: "Followings");
 
             migrationBuilder.RenameIndex(
                 name: "IX_Follow_FollowedUserId",
-                table: "Follows",
-                newName: "IX_Follows_FollowedUserId");
+                table: "Followings",
+                newName: "IX_Followings_FollowedUserId");
 
             migrationBuilder.AddPrimaryKey(
-                name: "PK_Follows",
-                table: "Follows",
+                name: "PK_Followings",
+                table: "Followings",
                 columns: new[] { "UserId", "FollowedUserId" });
 
             migrationBuilder.AddForeignKey(
-                name: "FK_Follows_AspNetUsers_FollowedUserId",
-                table: "Follows",
+                name: "FK_Followings_AspNetUsers_FollowedUserId",
+                table: "Followings",
                 column: "FollowedUserId",
                 principalTable: "AspNetUsers",
                 principalColumn: "Id",
                 onDelete: ReferentialAction.Restrict);
 
             migrationBuilder.AddForeignKey(
-                name: "FK_Follows_AspNetUsers_UserId",
-                table: "Follows",
+                name: "FK_Followings_AspNetUsers_UserId",
+                table: "Followings",
                 column: "UserId",
                 principalTable: "AspNetUsers",
                 principalColumn: "Id",
@@ -52,23 +52,23 @@ namespace GigHub.Migrations
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropForeignKey(
-                name: "FK_Follows_AspNetUsers_FollowedUserId",
-                table: "Follows");
+                name: "FK_Followings_AspNetUsers_FollowedUserId",
+                table: "Followings");
 
             migrationBuilder.DropForeignKey(
-                name: "FK_Follows_AspNetUsers_UserId",
-                table: "Follows");
+                name: "FK_Followings_AspNetUsers_UserId",
+                table: "Followings");
 
             migrationBuilder.DropPrimaryKey(
-                name: "PK_Follows",
-                table: "Follows");
+                name: "PK_Followings",
+                table: "Followings");
 
             migrationBuilder.RenameTable(
-                name: "Follows",
+                name: "Followings",
                 newName: "Follow");
 
             migrationBuilder.RenameIndex(
-                name: "IX_Follows_FollowedUserId",
+                name: "IX_Followings_FollowedUserId",
                 table: "Follow",
                 newName: "IX_Follow_FollowedUserId");
 

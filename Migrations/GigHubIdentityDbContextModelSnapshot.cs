@@ -116,7 +116,7 @@ namespace GigHub.Migrations
 
                     b.HasIndex("FollowedUserId");
 
-                    b.ToTable("Follows");
+                    b.ToTable("Followings");
                 });
 
             modelBuilder.Entity("GigHub.Models.Genre", b =>

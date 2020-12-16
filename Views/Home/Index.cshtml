@@ -18,7 +18,36 @@
                 <span class="genre">
                     @gig.Genre.Name
                 </span>
+                <button data-gig-id="@gig.Id" class="btn btn-light btn-sm pull-right js-toggle-attendance">Going?</button>
             </div>
         </li>
     }
 </ul>
+
+@section scripts {
+    <script>
+        $(document).ready(function() {
+            $(".js-toggle-attendance").click(function(e) {
+                var target = $(e.target);
+                var data = JSON.stringify({ GigId: target.attr("data-gig-id") });
+                console.log(data);
+
+                $.ajax({
+                    url: "/api/attendances", 
+                    type: "POST",
+                    data: data,
+                    contentType: "application/json; charset=utf-8"
+                })
+                .done(function() {
+                    console.log("Added attendace")
+                    target.removeClass("btn-light")
+                        .addClass("btn-info")
+                        .text("Going")
+                })
+                .fail(function(xhr, status, error) {
+                    console.log(error);
+                });
+            });
+        });
+    </script>
+}
